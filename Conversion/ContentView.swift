@@ -55,7 +55,7 @@ struct ContentView: View {
   var fromBaseToOutput : Double {
     switch getConversionUnits[selectedToIndex] {
       case "Fahrenheit":
-        return (fromInputToBase * 1.8) + 32
+        return fromInputToBase * 1.8 + 32
       case "Kelvin":
         return fromInputToBase + 273
       case "kilometers":
